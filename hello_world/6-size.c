@@ -1,5 +1,6 @@
 /*
  * 6-size.c
+ *
 */
 
 #include <stdio.h>
@@ -8,9 +9,7 @@
  * main - prints the size of various types on the computer
  *
  * Return: Always 0
-*/
-
-
+ */
 int main(void)
 {
 	printf("size of a char: %lu byte(s)\n", sizeof(char));
