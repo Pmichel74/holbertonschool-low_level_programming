@@ -2,11 +2,10 @@
 
 /**
 * main - Entry point of the program
-*  *
-*   * description: Prints a quote using the puts function
-*    * Return: Always 0 (Success)
- *
- * Return : always 0
+*
+* description: Prints a quote using the puts function
+* Return: Always 0
+*
 */
 
 int main(void)
