@@ -1,0 +1,23 @@
+/*
+ test
+ */
+#include <stdio>
+/**
+ *hello ballalala
+ *by Pat
+ */
+ int main(void)
+{
+	printf("hello c,\n");
+	return (0);
+}
+#include <stdio>
+/**
+ *salut
+*/
+int main(void)
+{
+	puts("\"salut tous");
+	return (0);
+}
+
