@@ -1,5 +1,5 @@
 /*
- * 6-size.c
+ * exercise 6size.c
  *
 */
 
