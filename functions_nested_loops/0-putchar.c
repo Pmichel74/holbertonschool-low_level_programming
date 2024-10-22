@@ -1,13 +1,11 @@
-#include <stdio.h>
-#include <unistd.h>
-#include <holberton.h>
+#include <main.h>
 
 /**
  * main -  prints _putchar, followed by a new line
  *
  * Return: 0 success
  */
-int _putchar(char c);
+int main(void);
 {
 	_putchar('_');
 	_putchar('p');
