@@ -1,13 +1,15 @@
-/* 0. Positive anything is better than negative nothing
+/*
+ *0. Positive anything is better than negative nothing
  */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-/** main - Prints the last digit of a randomly generated number
+/**
+ * main - Prints the last digit of a randomly generated number
  *        and whether it is greater than 0, equal 0, or less than 0.
- *
+ *Return: Always 0 (Success)
  */
 
 int main(void)
