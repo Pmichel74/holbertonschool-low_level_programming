@@ -1,6 +1,7 @@
 /* 0. Positive anything is better than negative nothing
  */
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
