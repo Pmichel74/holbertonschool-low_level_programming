@@ -1,4 +1,4 @@
-# include "main"
+# include "main.h"
 /**
  * main - prints x10 times the alphabet, in lowercase, followed by a new line.
  * Return: always 0
