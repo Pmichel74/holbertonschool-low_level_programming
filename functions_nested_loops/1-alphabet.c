@@ -3,15 +3,15 @@
  * print_alphabet - Entry point
  * Return: akways 0
  */
-int void print_alphabet(void)
+void print_alphabet(void)
 {
-	char letter = 'a'
-	While (letter <= 'z')
+	char letter = 'a';
+	while (letter <= 'z')
 		{
 			putchar(letter);
 			c++;
 		}
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
