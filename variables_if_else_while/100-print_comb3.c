@@ -3,7 +3,7 @@
  * main - prints all possible different combinations of two digits
  * Return: ALways 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int i = '0';
 	int j;
@@ -14,13 +14,17 @@ int main (void)
 		while (j <= '9')
 		{
 		if (i < j)
-			putchar('i');
-		        putchar('j');
-			if (i != '8' || i == '8' && j =! '9')
+
+		putchar('i');
+		putchar('j');
+			if (i != '8' || (i == '8' && j != '9'))
+
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
-		j++;				
+		j++;			
 	}
 	i++;
 
