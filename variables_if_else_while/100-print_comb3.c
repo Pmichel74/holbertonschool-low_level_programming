@@ -5,13 +5,12 @@
  */
 int main(void)
 {
-	int i = '0';
+	int i;
 	int j;
 
-	while (i <= 9)
+	for (i = '0'; i<= '9'; i++)
 	{
-		j = 0;
-		while (j <= '9')
+		for (j = '0'; j <= '9', j++)
 		{
 		if (i < j)
 
@@ -24,9 +23,7 @@ int main(void)
 			putchar(' ');
 			}
 		}
-		j++;			
 	}
-	i++;
 
 putchar('\n');
 
