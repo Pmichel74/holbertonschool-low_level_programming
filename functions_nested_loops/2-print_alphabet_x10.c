@@ -1,7 +1,7 @@
 # include "main.h"
 /**
- * main - prints x10 times the alphabet, in lowercase, followed by a new line,
- * followed by a new line
+ * print_alphabet_x10 - prints x10 times the alphabet
+ * in lowercase, followed by a new line.
  */
 void print_alphabet_x10(void)
 {
