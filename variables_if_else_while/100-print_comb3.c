@@ -11,15 +11,15 @@ int main(void)
 	{
 		for (j = i + 1 ; j <= 9; j++)
 		{
-			if (i != '8' || j != '9')
+			if (i != 8 || j != 9)
 			{
-			putchar('i');
-			putchar('j');
-			else
-			putchar('i');
-			putchar('j');
+			putchar('i'+ '0');
+			putchar('j'+ '0');
 			putchar(',');
 			putchar(' ');
+			else
+			putchar('i'+ '0');
+			putchar('j'+ '0');
 			}
 			
 		}	
