@@ -17,7 +17,9 @@ int main(void)
 			putchar('j'+ '0');
 			putchar(',');
 			putchar(' ');
+			}
 			else
+			{
 			putchar('i'+ '0');
 			putchar('j'+ '0');
 			}
