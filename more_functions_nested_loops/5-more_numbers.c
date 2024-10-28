@@ -15,14 +15,11 @@ void more_numbers(void)
 		{
 			if (count >= 10)
 			{
-				_putchar(count / 10);
-				_putchar(count % 10);
+				_putchar(count / 10 + '0');
+				_putchar(count % 10 + '0');
 			}
-			
-			
-				_putchar('\n');
-			
+									
 		}
-
+_putchar('\n');
 	}
 }
