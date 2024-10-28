@@ -18,18 +18,18 @@ int main(void)
 		}
 		else if (number % 3 == 0)
 		{
-			printf("Fizz");
+			printf(" Fizz");
 		}
 		else if (number % 5 == 0)
 		{
-			printf( "Buzz");
+			printf( " Buzz");
 		}
 		else
 		{
 		printf("%d", number);
 		}
 	}
-	printf('\n');
+	printf("\n");
 
 	return(0);
 }
