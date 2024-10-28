@@ -8,6 +8,10 @@ void print_square(int size)
 {
 	int line;
 	int row;
+	 if (size <= 0)
+	 {
+		 _putchar('\n');
+	 }
 
 	for (line = 0; line < size; line++)
 	{
@@ -15,10 +19,6 @@ void print_square(int size)
 		{
 			_putchar('#');
 		}
-		_putchar('\n');
-	}
-	if (size <= 0)
-	{
 		_putchar('\n');
 	}
 }
