@@ -20,11 +20,11 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (column = 1; column <= row; column ++)
+			for (column = 1; column <= row; column++)
 			{
 				_putchar('#');
 			}
-			_putchar('\n');			
+			_putchar('\n');
 		}
 	}
 }
