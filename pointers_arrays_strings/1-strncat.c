@@ -5,7 +5,7 @@
  * @dest: destination string
  * @src: source string
  * @n: number of bytes of str to concatenate
- * 
+ *
  * Return: a pointer to the resulting string dest
  */
 
@@ -24,5 +24,5 @@ char *_strncat(char *dest, char *src, int n)
     }
 	dest[dest_len + i] = '\0';
     
-	return (dest);
+    return (dest);
 }
