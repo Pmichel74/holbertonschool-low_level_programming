@@ -3,6 +3,8 @@
 
 void reset_to_98(int *n);
 
+char *cap_string(char *);
+
 char *string_toupper(char *);
 
 void reverse_array(int *a, int n);
