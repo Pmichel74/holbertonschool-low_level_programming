@@ -10,10 +10,6 @@ char *cap_string(char *s)
 {
 	int i, j;
 
-	char *cap_string(char *s)
-{
-	int i, j;
-
 	char chspe[13] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
 
