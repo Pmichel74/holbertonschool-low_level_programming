@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes everey word of a string
- * @s: string to modify
- *
- * Return: the resulting string
- */
+* cap_string - capitalizes everey word of a string
+* @s: string to modify
+*
+* Return: the resulting string
+*/
 char *cap_string(char *s)
 {
-    int i, j;
+	int i, j;
 
 	char chspe[13] = {' ', '\t', '\n', ',', ';', '.',
+
 		'!', '?', '"', '(', ')', '{', '}'};
 
 	for (i = 0; s[i] != '\0'; i++)
@@ -22,7 +23,7 @@ char *cap_string(char *s)
 		{
 			if (s[i] == chspe[j])
 			{
-				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+				else if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
 					s[i + 1] -= 32;
 				}
