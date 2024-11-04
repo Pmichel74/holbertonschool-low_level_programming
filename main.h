@@ -3,7 +3,7 @@
 
 void reset_to_98(int *n);
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *s, char b, unsigned int n);
 
 char *_strncat(char *dest, char *src, int n);
 
