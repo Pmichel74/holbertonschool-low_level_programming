@@ -3,6 +3,8 @@
 
 void reset_to_98(int *n);
 
+void _print_rev_recursion(char *s);
+
 void _puts_recursion(char *s);
 
 char *_memset(char *s, char b, unsigned int n);
