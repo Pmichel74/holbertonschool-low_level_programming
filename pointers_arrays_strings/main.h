@@ -5,6 +5,8 @@ void reset_to_98(int *n);
 
 char *_strstr(char *haystack, char *needle);
 
+void print_chessboard(char (*a)[8]);
+
 char *_strpbrk(char *s, char *accept);
 
 unsigned int _strspn(char *s, char *accept);
