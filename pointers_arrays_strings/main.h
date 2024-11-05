@@ -3,6 +3,8 @@
 
 void reset_to_98(int *n);
 
+void print_diagsums(int *a, int size);
+
 int _putchar(char c);
 
 char *_strstr(char *haystack, char *needle);
