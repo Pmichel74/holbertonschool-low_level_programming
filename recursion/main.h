@@ -3,6 +3,8 @@
 
 void reset_to_98(int *n);
 
+int factorial(int n);
+
 int _strlen_recursion(char *s);
 
 void _print_rev_recursion(char *s);
