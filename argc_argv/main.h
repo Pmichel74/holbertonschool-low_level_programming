@@ -3,7 +3,7 @@
 
 void reset_to_98(int *n);
 
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc __attribute__((unused)), char *argv[]);
 
 int _sqrt_recursion(int n);
 
