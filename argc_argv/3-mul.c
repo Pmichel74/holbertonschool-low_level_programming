@@ -3,14 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - converts a string to an integer
- * @s: string to be converted
- *
- * Return: the int converted from the string
  * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
- *
  * Return: 0 (Success), 1 (Error)
  */
 
