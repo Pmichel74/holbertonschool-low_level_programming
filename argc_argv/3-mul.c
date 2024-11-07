@@ -11,9 +11,9 @@
 
 int main (int argc, char *argv[])
 {
-	int long number1;
-	int long number2;
-	int long result;
+	int number1;
+	int number2;
+	int result;
 
 	if (argc != 3)
 	{
