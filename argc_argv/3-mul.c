@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * mulmain - converts a string to an integer
+ * main - converts a string to an integer
  * @s: string to be converted
  *
  * Return: the int converted from the string
