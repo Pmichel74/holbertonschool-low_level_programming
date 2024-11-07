@@ -10,7 +10,7 @@
  * Return: 0 (Success), 1 (Error)
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int number1;
 	int number2;
