@@ -3,6 +3,8 @@
 
 int _islower(int c);
 
+void print_number(int n)
+
 int _isalpha(int c);
 
 int print_sign(int n);
