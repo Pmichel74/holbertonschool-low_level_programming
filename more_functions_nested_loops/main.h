@@ -3,6 +3,8 @@
 
 int _islower(int c);
 
+void print_number(int n);
+
 int _isalpha(int c);
 
 int print_sign(int n);
@@ -29,7 +31,7 @@ int _isdigit(int c);
 
 int mul(int a, int b);
 
-void print_number(void);
+void print_numbers(void);
 
 int _putchar(char c);
 
