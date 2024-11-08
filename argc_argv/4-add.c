@@ -17,8 +17,6 @@ int main(int argc, char *argv[])
 
 	int j;
 
-	int k;
-
 	int num;
 
 	int sum = 0;
@@ -35,9 +33,9 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (k = 1; k < argc; k++)
+	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[k]);
+		num = atoi(argv[i]);
 		if (num > 0)
 		{
 			sum = sum + num;
