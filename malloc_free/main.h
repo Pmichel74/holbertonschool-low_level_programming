@@ -3,6 +3,8 @@
 
 void reset_to_98(int *n);
 
+void free_grid(int **grid, int height);
+
 int **alloc_grid(int width, int height);
 
 char *str_concat(char *s1, char *s2);
