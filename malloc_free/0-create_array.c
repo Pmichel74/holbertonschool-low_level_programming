@@ -26,10 +26,10 @@ char *create_array(unsigned int size, char c)
 
 	while (i < size)
 	{
-		a[i] = c;
+		*(a + i) = c;
 		i++;
 	}
 
-	a[i] = '\0';
+	*(a + i) = '\0';
 	return (a);
 }
