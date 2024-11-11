@@ -3,6 +3,10 @@
 
 void reset_to_98(int *n);
 
+char *str_concat(char *s1, char *s2);
+
+char *_strdup(char *str);
+
 char *create_array(unsigned int size, char c);
 
 char *_memset(char *s, char b, unsigned int n);

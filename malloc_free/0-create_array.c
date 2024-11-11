@@ -19,17 +19,17 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 	return (NULL);
 
-	a = malloc(sizeof(*a) * size);
+	a = malloc(sizeof(*a) * size);//ici on veut allouer de la memoire pour un pointeur et pas un caractere (char) et pas de + 1 apres size car par defaut il y a le caractere nul dedans.
 
 	if (a == NULL)
 	return (0);
 
 	while (i < size)
 	{
-		a[i] = c;
+		a[i] = c; // on peut aussi ecrire *(a + i) = c
 		i++;
 	}
 
-	a[i] = '\0';
+	a[i] = '\0'; // voir au dessus
 	return (a);
 }
