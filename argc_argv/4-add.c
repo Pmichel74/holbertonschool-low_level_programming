@@ -23,9 +23,9 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (j = 0; argv[i][j] != '\0'; j++)//vérifie que chaque argument est composé uniquement de chiffres.
 		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
+			if (argv[i][j] < '0' || argv[i][j] > '9')//Si un caractère non numérique est trouvé, le programme affiche "Error" et se termine avec un code d'erreur
 			{
 			printf("Error\n");
 			return (1);
@@ -33,12 +33,11 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	for (i = 1; i < argc; i++)
-	{
-		num = atoi(argv[i]);
+	for (i = 1; i < argc; i++)//Cette boucle convertit chaque argument en entier avec atoi, et si le nombre est positif, l'ajoute à la somme totale.
+
 		if (num > 0)
 		{
-			sum = sum + num;
+			sum = sum + num;// sum += num; on peut ecrire comme ca c plus pro ! 
 		}
 	}
 	printf("%d\n", sum);
