@@ -10,7 +10,7 @@
 */
 int main(int argc __attribute__((unused)), char *argv[]) //__attribute__((unused)) pour ne pas utiliser le argc
 {
-	//printf("%s\n", argv[0]);
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
