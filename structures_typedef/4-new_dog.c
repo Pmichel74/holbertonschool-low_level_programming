@@ -2,19 +2,19 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-size_t strlen(const char *str);
+int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /**
  * strlen - Finds the length of a string.
  * @str: The string to be measured.
  * Return: The length of the string.
  */
-size_t strlen(const char *str)
+int _strlen(char *str)
 {
-	size_t len = 0;
-
 	
+	int len = 0;
 
 	while (str[len] != '\0')
 	len++;
@@ -64,16 +64,17 @@ size_t strlen(const char *str)
 	if (dog_add == NULL)
 	return (NULL);
 
-	dog_add->name = malloc(sizeof(char) * (strlen(name) + 1));
+	dog_add->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (dog_add->name == NULL)
 	{
 		free(dog_add);
 		return (NULL);
 	}
 
-	dog_add->owner = malloc(sizeof(char) * (strlen(owner) + 1));
+	dog_add->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (dog_add->owner == NULL)
 	{
+		free(dog_add->name);
 		free(dog_add);
 		return (NULL);
 	}
