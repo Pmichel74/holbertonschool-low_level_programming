@@ -3,7 +3,7 @@
 
 /**
  * free_dog - Frees dogs.
- * @d: The dog to be freed.
+ * @d: free the structure
  */
 void free_dog(dog_t *d)
 {
