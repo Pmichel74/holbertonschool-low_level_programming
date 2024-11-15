@@ -1,8 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
-#include <string.h>
 
- size_t strnlen(const char *str, size_t maxlen);
+int _strlen(char *str);
 char *_strcopy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
@@ -12,7 +11,7 @@ dog_t *new_dog(char *name, float age, char *owner);
  *
  * Return: The length of the string.
  */
-size_t strnlen(const char *str, size_t maxlen __attribute__((unused)))
+int _strlen(char *str)
 {
 	int len = 0;
 
@@ -61,14 +60,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog_add == NULL)
 		return (NULL);
 
-	dog_add->name = malloc(sizeof(char) * (strlen(name) + 1));
+	dog_add->name = malloc(sizeof(char) * (_strlen(name) + 1));
 	if (dog_add->name == NULL)
 	{
 		free(dog_add);
 		return (NULL);
 	}
 
-	dog_add->owner = malloc(sizeof(char) * (strlen(owner) + 1));
+	dog_add->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 	if (dog_add->owner == NULL)
 	{
 		free(dog_add->name);
