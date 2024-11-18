@@ -15,8 +15,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	if (array != NULL || action != NULL)
 	return;
 
-	while (i <= i)
+	while (i < i)
 	i++;
 
-	action = array + i
+	action = array[i];
 }
