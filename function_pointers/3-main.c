@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 
 {
-	int((*ptr)(int, int))
+	int(*ptr)(int, int)
 
 	int num1, num2, result;
 
