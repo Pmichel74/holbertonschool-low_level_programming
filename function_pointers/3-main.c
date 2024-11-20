@@ -35,7 +35,7 @@ ptr = get_op_func(argv[2]);
 	}
 	c = *argv[2];
 
-	if ((c == '/' || c == '%') && num2 == 0)
+	if ((c == '/' || c == '%') && num2 == 0) 
 	{
 		printf("Error\n");
 		exit(100);
