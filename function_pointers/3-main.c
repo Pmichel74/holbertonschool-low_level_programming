@@ -13,9 +13,10 @@
 int main(int argc, char *argv[])
 
 {
-	int(*ptr)(int, int)
+	int (*ptr)(int, int);
 
 	int num1, num2, result;
+	char c;
 
 	if (argc != 4)
 	{
@@ -32,6 +33,14 @@ ptr = get_op_func(argv[2]);
 	printf("Error\n");
 	exit(99);
 	}
+	c = *argv[2];
+
+	if ((c == '/' || c == '%') && num2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 
 result = ptr(num1, num2);
 printf("%d\n", result);
