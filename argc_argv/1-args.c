@@ -10,7 +10,7 @@
 */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc - 1);// -1 car il faut eliminer le nom de la fonction qui est inclus
+	printf("%d\n", argc - 1);/*-1 car il faut eliminer le nom de la fonction qui est inclus */
 
 	return (0);
 }

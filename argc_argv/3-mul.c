@@ -16,15 +16,15 @@ int main(int argc, char *argv[])
 	int number2;
 	int result;
 
-	if (argc != 3)// (nom du programme + 2 nombres) ne jamais oublier nom du programme !
+	if (argc != 3)/* (nom du programme + 2 nombres) ne jamais oublier nom du programme ! */
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	number1 = atoi(argv[1]);//atoi convertit les arguments (chaînes de caractères) en entiers.
+	number1 = atoi(argv[1]);/* atoi convertit les arguments (chaînes de caractères) en entiers */
 	number2 = atoi(argv[2]);
-	result = number1 * number2;
+	result = number1 + number2;
 
 	printf("%d\n", result);
 
