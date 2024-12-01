@@ -10,7 +10,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
 
-	char *str;
+	char *str; /*Pointeur pour stocker chaque chaîne de caractères extraite.*/
 
 	va_list args;
 
@@ -20,12 +20,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(args, char *);
 
-		if (str == NULL)
+		if (!str) /* if (str == NULL)*/
 		printf("(nil)");
 		else
 		printf("%s", str);
 
-		if (i != (n - 1) && separator != NULL)
+		if (i < (n - 1) && separator != NULL)
 		printf("%s", separator);
 
 

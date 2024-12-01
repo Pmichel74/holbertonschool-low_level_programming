@@ -2,7 +2,7 @@
 
 /**
  * int_index - searches for an integer
- * @array: array to search in
+ * @array: pointer to an array to search in
  * @size: size of the array
  * @cmp: pointer to the comparing function
  *
@@ -16,7 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int i;
 
 
-	if (array && cmp)
+	if (array && cmp) /* if (array != NULL && cmp != NULL)*/
 	{
 		for (i = 0; i < size; i++)
 		{

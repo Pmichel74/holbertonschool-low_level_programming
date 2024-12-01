@@ -7,13 +7,13 @@
  * on each element of an array.
  * @array: array to iterate
  * @size: size of the array
- * @action: pointer to function used
+ * @action: pointer to function with an integer as argument
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i = 0;
 
-	if (!array || !action)
+	if (!array || !action) /* if (array == NULL || action == NULL) */
 	return;
 
 	while (i < size)

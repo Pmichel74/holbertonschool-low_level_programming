@@ -23,7 +23,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
+	while (ops[i].op != NULL && *(ops[i].op) != *s) /* on assigne les elements du tableau à la structure .op */
 	i++;
 
 	return (ops[i].f);
