@@ -26,6 +26,8 @@ list_t *add_node(list_t **head, const char *str)
 		free(add);
 		return (NULL);
 	}
+	else
+	{
 	len = strlen(str); /*strlen donne longueur direct(evite boucle)*/
 
 	add->str = dup;
@@ -35,4 +37,5 @@ list_t *add_node(list_t **head, const char *str)
 	*head = add;
 
 	return (add);
+	}
 }
