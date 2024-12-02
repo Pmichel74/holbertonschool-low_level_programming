@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (add == NULL)
 	return (NULL);
 
-	dup = strdup(str);/* strdup pour dupliquer */
+	dup = strdup(str);
 	if (dup == NULL)
 	{
 		free(add);
@@ -28,7 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	else
 	{
-	len = strlen(str); /*strlen donne longueur direct(evite boucle)*/
+	len = strlen(str);
 
 	add->str = dup;
 	add->len = len;
