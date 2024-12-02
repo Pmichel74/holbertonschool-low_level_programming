@@ -13,10 +13,10 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	char *dup;
-	int len = 0;
+	int length = 0;
 	list_t *add;
 
-	add = malloc(sizeof(list_t));
+	add = malloc(sizeof(list_t)); /* noeud "add"*/
 	if (add == NULL)
 	return (NULL);
 
@@ -27,10 +27,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	else
-	len = strlen(str);
+	length = strlen(str); /*strlen calcule longueur(evite une boucle)*/
 
 	add->str = dup;
-	add->len = len;
+	add->len = length;
 	add->next = *head;
 
 	*head = add;
