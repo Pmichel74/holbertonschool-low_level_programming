@@ -27,15 +27,15 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	else
-	{
-	len = strlen(str);
+
+	for (len = 0; str[len];)
+	len++;
 
 	add->str = dup;
 	add->len = len;
 	add->next = *head;
 
 	*head = add;
-
-	return (add);
 	}
+	return (add);
 }
