@@ -13,7 +13,7 @@
  * @str: The string to be added to the list_t list.
  *
  * Return: If the function fails - NULL.
- *         Otherwise - the address of the add element.
+ *         Otherwise - the address of the end element.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
