@@ -12,7 +12,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *dup;
-	unsigned int length = 0;
+	int length = 0;
 	list_t *add;
 	list_t *end;
 
