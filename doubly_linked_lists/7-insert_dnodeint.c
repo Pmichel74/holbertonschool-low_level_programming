@@ -20,7 +20,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (idx != 1)/*juste avant l'index où inserer nouveau noeud*/
 	tmp = tmp->next;
-	idx--;
+
 
 	if (!tmp->next)
 	return (add_dnodeint_end(h, n));
