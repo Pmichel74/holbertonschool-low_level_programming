@@ -5,11 +5,10 @@
  * Desc: Header file containing prototypes for all functions
  *       written in the 0x14-file_io directory.
  */
-#include <fcntl.h>
-#include <unistd.h>
-#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 int _putchar(char);
 ssize_t read_textfile(const char *filename, size_t letters);
