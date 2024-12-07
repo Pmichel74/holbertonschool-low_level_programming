@@ -25,14 +25,15 @@ char *create_buffer(char *file)
 }
 
 /**
- * close - Function to close a file descriptor
+ * close_fd - Function to close a file descriptor
  * @fd: The file descriptor to be closed.
  *
  * Return : -1 on failure (errno is set to indicate the error)
  */
-int close(int fd)
+void close_fd(int fd)
 {
 	int c;
+
 	c = close(fd);
 
 	if (c == -1)
@@ -40,7 +41,6 @@ int close(int fd)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	return (-1);
 }
 
 
@@ -96,8 +96,8 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(buffer);
-	close(from);
-	close(to);
+	close_fd(from);
+	close_fd(to);
 
 	return (0);
 }
