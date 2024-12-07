@@ -1,7 +1,6 @@
 #include "main.h"
 
 char *create_buffer(char *file);
-void close_file(int fd);
 
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
@@ -26,13 +25,14 @@ char *create_buffer(char *file)
 }
 
 /**
- * close_file - Closes file descriptors.
+ * close - Function to close a file descriptor
  * @fd: The file descriptor to be closed.
+ *
+ * Return : -1 on failure (errno is set to indicate the error)
  */
-void close_file(int fd)
+int close(int fd)
 {
 	int c;
-
 	c = close(fd);
 
 	if (c == -1)
@@ -40,7 +40,9 @@ void close_file(int fd)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
+	return (-1);
 }
+
 
 /**
  * main - Copies the contents of a file to another file.
@@ -94,8 +96,8 @@ int main(int argc, char *argv[])
 	} while (r > 0);
 
 	free(buffer);
-	close_file(from);
-	close_file(to);
+	close(from);
+	close(to);
 
 	return (0);
 }
