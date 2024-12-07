@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 {
 
 int to, r, w, source;
+int close_status = 0;
 char *buffer;
 
 if (argc != 3)/* nom du prog,fichier source,fichier destination*/
@@ -71,6 +72,25 @@ while (r > 0)
 		to = open(argv[2], O_WRONLY | O_APPEND);
 	}
 }
+
+    free(buffer);
+
+    if (close(source) == -1)
+    {
+        dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", source);
+        close_status = -1;
+    }
+
+    if (close(to) == -1)
+    {
+        dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", to);
+        close_status = -1;
+    }
+
+    if (close_status == -1)
+        exit(100);
+
+    return (0);
 
 free(buffer);
 close(source);
