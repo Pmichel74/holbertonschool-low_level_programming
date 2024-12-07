@@ -91,10 +91,4 @@ while (r > 0)
         exit(100);
 
     return (0);
-
-free(buffer);
-close(source);
-close(to);
-
-return (0);
 }
