@@ -3,11 +3,11 @@
 char *create_buffer(char *file);
 
 /**
-* create_buffer - Allocates 1024 bytes for a buffer.
-* @file: The name of the file buffer is storing chars for.
-*
-* Return: A pointer to the newly-allocated buffer.
-*/
+ * create_buffer - Allocates 1024 bytes for a buffer.
+ * @file: The name of the file buffer is storing chars for.
+ *
+ * Return: A pointer to the newly-allocated buffer.
+ */
 char *create_buffer(char *file)
 {
 	char *buffer;
@@ -25,11 +25,11 @@ char *create_buffer(char *file)
 }
 
 /**
-* close_fd - Function to close a file descriptor
-* @fd: The file descriptor to be closed.
-*
-* Return : -1 on failure (errno is set to indicate the error)
-*/
+ * close_fd - Function to close a file descriptor
+ * @fd: The file descriptor to be closed.
+ *
+ * Return : -1 on failure (errno is set to indicate the error)
+ */
 void close_fd(int fd)
 {
 	int c;
@@ -45,21 +45,20 @@ void close_fd(int fd)
 
 
 /**
-* main - Copies the contents of a file to another file.
-* @argc: The number of arguments supplied to the program.
-* @argv: An array of pointers to the arguments.
-*
-* Return: 0 on success.
-*
-* Description: If the argument count is incorrect - exit code 97.
-*              If file_from does not exist or cannot be read - exit code 98.
-*              If file_to cannot be created or written to - exit code 99.
-*              If file_to or file_from cannot be closed - exit code 100.
-*/
+ * main - Copies the contents of a file to another file.
+ * @argc: The number of arguments supplied to the program.
+ * @argv: An array of pointers to the arguments.
+ *
+ * Return: 0 on success.
+ *
+ * Description: If the argument count is incorrect - exit code 97.
+ *              If file_from does not exist or cannot be read - exit code 98.
+ *              If file_to cannot be created or written to - exit code 99.
+ *              If file_to or file_from cannot be closed - exit code 100.
+ */
 int main(int argc, char *argv[])
 {
 	int from, to, r, w;
-
 	char *buffer;
 
 	if (argc != 3)
@@ -82,8 +81,8 @@ while (r > 0)
 		dprintf(STDERR_FILENO,
 			"Error: Can't read from file %s\n", argv[1]);
 		free(buffer);
-		close(from);
-		close(to);
+		close_fd(from);
+		close_fd(to);
 		exit(98);
 	}
 
@@ -93,8 +92,8 @@ while (r > 0)
 		dprintf(STDERR_FILENO,
 			"Error: Can't write to %s\n", argv[2]);
 		free(buffer);
-		close(from);
-		close(to);
+		close_fd(from);
+		close_fd(to);
 		exit(99);
 	}
 
