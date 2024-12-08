@@ -13,7 +13,7 @@ size_t list_len(const list_t *h)
 	while (h != NULL)
 	{
 		count++;
-		h = h->next;
+		h = h->next;/*passe au noeud suivant*/
 	}
 	return (count);
 }
