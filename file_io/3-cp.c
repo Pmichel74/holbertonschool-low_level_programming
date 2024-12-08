@@ -96,8 +96,8 @@ do {
 	} while (r > 0);
 
 	free(buffer);
-	close_file(from);
-	close_file(to);
+	close_fd(from);
+	close_fd(to);
 
 	return (0);
 }
