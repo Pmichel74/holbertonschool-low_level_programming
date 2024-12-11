@@ -43,7 +43,6 @@ void close_fd(int fd)
 	}
 }
 
-
 /**
  * main - Copies the contents of a file to another file.
  * @argc: The number of arguments supplied to the program.
@@ -67,11 +66,11 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 
-	buffer = create_buffer(argv[2]);
-	from = open(argv[1], O_RDONLY);
-	r = read(from, buffer, 1024);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
+	buffer = create_buffer(argv[2]);/* buffer pour stocker temp données fichier source*/
+	from = open(argv[1], O_RDONLY);/*ouvre fichier source*/
+	r = read(from, buffer, 1024);/*lit fichier source dans buffer*/
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);/*crée le fichier de destination*/
+											/* trunck taille fichier a 0 s'il existe*/
 	do {
 		if (from == -1 || r == -1)
 		{
@@ -89,10 +88,10 @@ int main(int argc, char *argv[])
 			free(buffer);
 			exit(99);
 		}
-
+		/* lit jusqu'a 1024 octets*/
 		r = read(from, buffer, 1024);
 		to = open(argv[2], O_WRONLY | O_APPEND);
-
+		/*ouvre fichier destination en mode ajout"*/
 	} while (r > 0);
 
 	free(buffer);
