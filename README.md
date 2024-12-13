@@ -40,7 +40,7 @@ working in the C language. The specific list of projects contained follows:
 
 ## Author :black_nib:
 
-* __Brennan D Baraban__ <[bdbaraban](https://github.com/bdbaraban)>
+* __Pmichel74_ <[Pmichel74](https://github.com/bdbaraban)>
 
 ## Acknowledgements :pray:
 
