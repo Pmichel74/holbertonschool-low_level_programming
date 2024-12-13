@@ -66,11 +66,3 @@ in the project.
     * Each argument is followed by a `\n` in the new string.
     * If `ac == 0`, `av == NULL`, or the function fails - returns `NULL`.
 
-* **6. I will show you how great I am**
-  * [100-strtow.c](./100-strtow.c): C function that splits a string into words.
-    * Returns a pointer to a newly-allocated space in memory containing
-    an array of strings (words).
-    * Each element of the array of strings contains a single word, null-terminated.
-    * The last element of the returned array is `NULL`.
-    * Words are separated by spaces.
-    * If `str == NULL`, `str == ""`, or the function fails - returns `NULL`.
