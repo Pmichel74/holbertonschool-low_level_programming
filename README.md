@@ -34,8 +34,8 @@ working in the C language. The specific list of projects contained follows:
 * [0x19. C - Hash tables](hash_tables)
 * [0x1A. C - Sorting algorithms & Big O](sorting_algorithms)
 * [0x1B. C - Makefiles](./0x1B-makefiles)
-* [0x1C. C - Binary trees](https://github.com/Pmichel74/0x1C-binary_trees/tree/master)
-* [0x1D. C - Search Algorithms](earch_algorithms)
+* [0x1C. C - Binary trees](https://github.com/Pmichel74/holbertonschool-binary_trees)
+* [0x1D. C - Search Algorithms](https://github.com/Pmichel74/holbertonschool-sorting_algorithms)
 
 ## Author :black_nib:
 
