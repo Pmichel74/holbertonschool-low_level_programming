@@ -15,13 +15,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *tmp = *h, *add;
 
 
-	if (idx == 0)
-		return (add_dnodeint(h, n));
+	if (idx == 0)/*index a 0*/
+		return (add_dnodeint(h, n));/*fonction add_dnodeint pour ajouter en tête*/
 
-	while (idx > 0)/*juste avant l'index où inserer nouveau noeud*/
+	while (idx > 0)/*se déplacer dans la liste jusqu'à la position
+	juste avant l'endroit où le nouveau nœud doit être inséré.*/
 	{
-	idx--;
-	tmp = tmp->next;
+	idx--;/*permet de compter combien de nœuds ont été parcourus*/
+	tmp = tmp->next;/*avancer le pointeur tmp au nœud suivant dans la liste*/
 	if (!tmp)
 	return (NULL);
 	}

@@ -15,8 +15,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	if (!head)
 	return (NULL);
 
-	index--;
-	head = head->next;
+	index--;/*decremente et avance index a chaque iteration*/
+	head = head->next;/* <- -> double list !*/
 	}
 	return (head);
 }

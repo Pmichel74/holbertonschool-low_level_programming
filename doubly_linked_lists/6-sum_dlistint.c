@@ -12,8 +12,8 @@ int sum_dlistint(dlistint_t *head)
 
 	while (head)
 	{
-		sum += head->n;
-		head = head->next;
+		sum += head->n;/*ajoute valeur noeud courant a sum*/
+		head = head->next;/*avance au noeud suivant*/
 	}
 	return (sum);
 }

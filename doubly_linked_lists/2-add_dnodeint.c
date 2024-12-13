@@ -12,13 +12,14 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *add;
 
-	add = malloc(sizeof(dlistint_t));/*allocation memoire new pointer*/
+	add = malloc(sizeof(dlistint_t));/*allocation memoire pour nouveau noeud*/
 	if (!add)
 	return (NULL);
 
-	add->n = n;/* creation nouveau noeud*/
-	add->prev = NULL;/* NULL car tete de liste*/
-	add->next = *head;/*pointe vers l'ancien premier noeud*/
+	add->n = n;/* assigne valeur n au nouveau noeud*/
+	add->prev = NULL;/*assigne NULL à prev car nouveau noeud sera en tete*/
+	add->next = *head;/*double_linked lists:
+	doit pointer vers l'ancien noeud qui etait en tete */
 
 	if (*head)
 	(*head)->prev = add;/*maj de l'ancien premier noeud*/
