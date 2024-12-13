@@ -53,7 +53,7 @@ the differences between the two as well as how to use and manipulate strings in 
     * Returns a pointer to the filled memory area `s`.
 
  * **0. strcat**
-  * [0-strcat.c](./0-strcat.c): C function that concatenates two strings.
+   * [0-strcat.c](./0-strcat.c): C function that concatenates two strings.
     * Adds a terminating null byte at end.
 
 * **0. 98 Battery st.**
