@@ -18,31 +18,33 @@ char *search_in_path(char *command, char *path)
 	if (!path_copy)
 		return (NULL);
 
-	command_length = strlen(command);
-	path_token = strtok(path_copy, ":");
+	command_length = strlen(command);/* nmbre de caractères de la commande */
+	path_token = custom_strtok(path_copy, ":");/* ":" delimiteur de la chaine  */
+	/* extrait le 1er token de path_Copy(repertoire)*/
 
 	while (path_token != NULL)
 	{
-		directory_length = strlen(path_token);
-		file_path = malloc(command_length + directory_length + 2);
-		if (!file_path)
+		directory_length = strlen(path_token);/* nmbre de token dans le nom du repertoire */
+		file_path = malloc(command_length + directory_length + 2);/* alloue memoire pour chemin complet de la commande du fichier */
+		if (!file_path)										/* +2 pour "/" et "char Null" de fin*/
 		{
 			free(path_copy);
 			return (NULL);
 		}
 
-		strcpy(file_path, path_token);
-		strcat(file_path, "/");
-		strcat(file_path, command);
+		strcpy(file_path, path_token);/* ex: /user/bin */
+		strcat(file_path, "/");/* /user/bin/ */
+		strcat(file_path, command);/* /user/bin/ls */
 
+		/* check si fichier existe et est executable */
 		if (stat(file_path, &buffer) == 0 && access(file_path, X_OK) == 0)
 		{
 			free(path_copy);
-			return (file_path);
+			return (file_path);/* return le chemin */
 		}
 
 		free(file_path);
-		path_token = strtok(NULL, ":");
+		path_token = custom_strtok(NULL, ":");/* ici on passe au prochain token */
 	}
 
 	free(path_copy);

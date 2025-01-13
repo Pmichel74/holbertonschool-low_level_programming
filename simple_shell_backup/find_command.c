@@ -9,21 +9,21 @@
  */
 char *find_command(char *command, char *envp[])
 {
-	char *path;
-	char *absolute_path;
+	char *path;/* pointeur pour stocker la variable path */
+	char *absolute_path;/* pointeur pour stocker chemin absolu de commande */
 
 	if (!command)
 		return (NULL);
 
-	absolute_path = check_absolute_path(command);
+	absolute_path = check_absolute_path(command);/* appel fonction: verifie si commande est un chemin absolu ou relatif */
 	if (absolute_path)
 		return (absolute_path);
 
-	path = find_path(envp);
+	path = find_path(envp);/* Cherche la variable PATH dans l'environnement */
 	if (!path)
 		return (NULL);
 
-	absolute_path = search_in_path(command, path);
+	absolute_path = search_in_path(command, path);/* Cherche la commande dans les répertoires du PATH */
 
 	if (!absolute_path)
 		return (NULL);

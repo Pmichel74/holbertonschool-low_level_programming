@@ -13,8 +13,8 @@ char *find_path(char *envp[])
 
 	for (i = 0; envp[i] != NULL; i++)
 	{
-		if (strncmp(envp[i], "PATH=", 5) == 0)
-			return (envp[i] + 5); /*Retourne la valeur après "PATH="*/
+		if (strncmp(envp[i], "PATH=", 5) == 0)/* compare les 5 premiers caractères de env[i] */
+			return (envp[i] + 5);/* fait avancer pointeur de 5 positions pour sauter PATH */
 	}
 	return (NULL);
 }
