@@ -21,7 +21,7 @@ working in the C language. The specific list of projects contained follows:
 * [C - Structures, typedef](./structures_typedef)
 * [C - Function pointers](./function_pointers)
 * [C - Variadic functions](./variadic_functions)
-* [C - printf](https://github.com/Pmichel74/printf/tree/master)
+* [C - printf](https://github.com/Pmichel74/holbertonschool-printf/tree/master)
 * [C - Singly linked lists](./singly_linked_lists)
 * [C - More singly linked lists](./more_singly_linked_lists)
 * [C - Bit manipulation](./bit_manipulation)
