@@ -7,7 +7,7 @@ structures, algorithms, and other low-level programming concepts while
 working in the C language. The specific list of projects contained follows:
 
 * [0x00. C - Hello, World](./hello_world)
-* [0x01. C - Variables, if, else, while](.variables_if_else_while)
+* [0x01. C - Variables, if, else, while](./variables_if_else_while)
 * [0x02. C - Functions, nested loops](./functions_nested_loops)
 * [0x03. C - More functions, more nested loops](./more_functions_nested_loops)
 * [0x04. C - Pointers, arrays and strings](./pointers_arrays_strings)
