@@ -21,16 +21,10 @@ working in the C language. The specific list of projects contained follows:
 * [C - Variadic functions](./variadic_functions)
 * [C - printf](https://github.com/Pmichel74/holbertonschool-printf/tree/master)
 * [C - Singly linked lists](./singly_linked_lists)
-* [C - More singly linked lists](./more_singly_linked_lists)
-* [C - Bit manipulation](./bit_manipulation)
 * [C - File I/O](./file_io)
 * [C - Simple Shell](https://github.com/Pmichel74/simple_shell/tree/master)
 * [C - Doubly linked lists](./doubly_linked_lists)
-* [C - Dynamic libraries](./dynamic_libraries)
-* [C - Hash tables](./hash_tables)
 * [C - Sorting algorithms & Big O](./sorting_algorithms)
-* [C - Makefiles](./makefiles)
-* [C - Search Algorithms](./0x1D-search_algorithms)
 
 ## Author :black_nib:
 
