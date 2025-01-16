@@ -14,7 +14,6 @@ working in the C language. The specific list of projects contained follows:
 * [0x05. C - More pointers, arrays and strings](./pointers_arrays_strings)
 * [0x06. C - Even more pointers, arrays and strings](./pointers_arrays_strings)
 * [0x07. C - Recursion](./recursion)
-* [0x08. C - Static libraries](./static_libraries)
 * [0x09. C - argc, argv](./argc_argv)
 * [0x0A. C - malloc, free](./malloc_free)
 * [0x0B. C - More malloc, free](./more_malloc_free)
