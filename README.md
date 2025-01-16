@@ -24,7 +24,7 @@ working in the C language. The specific list of projects contained follows:
 * [C - File I/O](./file_io)
 * [C - Simple Shell](https://github.com/Pmichel74/simple_shell/tree/master)
 * [C - Doubly linked lists](./doubly_linked_lists)
-* [C - Sorting algorithms & Big O](./sorting_algorithms)
+* [C - Sorting algorithms & Big O([./sorting_algorithms](https://github.com/Pmichel74/holbertonschool-sorting_algorithms/tree/master))
 
 ## Author :black_nib:
 
