@@ -40,6 +40,6 @@ using project-based peer learning. For more information, visit
 
 <p align="center">
   <img
-    src="http://www.holbertonschool.com/holberton-logo.png"
-    alt="Holberton School logo">
+    src="img/holberton-logo.png"
+    alt="Holberton School">
 </p>
