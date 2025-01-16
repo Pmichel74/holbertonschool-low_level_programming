@@ -12,7 +12,6 @@ working in the C language. The specific list of projects contained follows:
 * [C - More functions, more nested loops](./more_functions_nested_loops)
 * [C - Pointers, arrays and strings](./pointers_arrays_strings)
 * [C - More pointers, arrays and strings](./pointers_arrays_strings)
-* [C - Even more pointers, arrays and strings](./pointers_arrays_strings)
 * [C - Recursion](./recursion)
 * [C - argc, argv](./argc_argv)
 * [C - malloc, free](./malloc_free)
