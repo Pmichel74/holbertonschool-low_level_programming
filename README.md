@@ -16,7 +16,6 @@ working in the C language. The specific list of projects contained follows:
 * [C - argc, argv](./argc_argv)
 * [C - malloc, free](./malloc_free)
 * [C - More malloc, free](./more_malloc_free)
-* [C - Preprocessor](./preprocessor)
 * [C - Structures, typedef](./structures_typedef)
 * [C - Function pointers](./function_pointers)
 * [C - Variadic functions](./variadic_functions)
