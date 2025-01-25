@@ -10,6 +10,7 @@ This repository contains programs written in C for low-level programming at Holb
 
 ### Basics
 * 🔤 [C - Hello, World](./hello_world)
+* 🔄 [C - Variables, if, else, while](./variables_if_else_while) 
 * ➿ [C - Functions, nested loops](./functions_nested_loops)
 * 🔁 [C - More functions, more nested loops](./more_functions_nested_loops)
 
@@ -58,7 +59,6 @@ gcc -Wall -Werror -Wextra -pedantic tests/test_file.c file.c -o test
 Patrick MICHEL
 
 GitHub: @Pmichel74
-LinkedIn: Patrick MICHEL
 
 ### 🙏 Acknowledgements
 All work contained in this project was completed as part of the curriculum for Holberton School. Holberton School is a campus-based full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning. For more information, visit this link.
