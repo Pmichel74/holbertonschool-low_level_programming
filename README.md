@@ -10,7 +10,6 @@ This repository contains programs written in C for low-level programming at Holb
 
 ### Basics
 * 🔤 [C - Hello, World](./hello_world)
-* 🔄 [C - Variables, if, else, while](./variables_if_else_while) 
 * ➿ [C - Functions, nested loops](./functions_nested_loops)
 * 🔁 [C - More functions, more nested loops](./more_functions_nested_loops)
 
