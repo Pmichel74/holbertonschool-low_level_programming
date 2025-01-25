@@ -1,45 +1,65 @@
-# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
+# 🎓 Low Level Programming & Algorithms
 
-This repository contains programs written for the low-level programming and
-algorithm track at Holberton School. In these projects, which  occurred
-throughout the duration of the Year 1 curriculum, I learned about data
-structures, algorithms, and other low-level programming concepts while
-working in the C language. The specific list of projects contained follows:
+[![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![gcc](https://img.shields.io/badge/GCC-V89_or_later-orange.svg)](https://gcc.gnu.org/)
 
-* [C - Hello, World](./hello_world)
-* [C - Variables, if, else, while](./variables_if_else_while)
-* [C - Functions, nested loops](./functions_nested_loops)
-* [C - More functions, more nested loops](./more_functions_nested_loops)
-* [C - Pointers, arrays and strings](./pointers_arrays_strings)
-* [C - More pointers, arrays and strings](./pointers_arrays_strings)
-* [C - Recursion](./recursion)
-* [C - argc, argv](./argc_argv)
-* [C - malloc, free](./malloc_free)
-* [C - More malloc, free](./more_malloc_free)
-* [C - Structures, typedef](./structures_typedef)
-* [C - Function pointers](./function_pointers)
-* [C - Variadic functions](./variadic_functions)
-* [C - printf](https://github.com/Pmichel74/holbertonschool-printf/tree/master)
-* [C - Singly linked lists](./singly_linked_lists)
-* [C - File I/O](./file_io)
-* [C - Simple Shell](https://github.com/Pmichel74/simple_shell/tree/master)
-* [C - Doubly linked lists](./doubly_linked_lists)
-* [C - Sorting algorithms & Big O](https://github.com/Pmichel74/holbertonschool-sorting_algorithms/tree/master))
+## 📝 Description
+This repository contains programs written in C for low-level programming at Holberton School.
 
-## Author :black_nib:
+## 🗂️ Project Structure 
 
-* __Patrick MICHEL__ <[Michel](https://github.com/Pmichel74)>
+### Basics
+* 🔤 [C - Hello, World](./hello_world)
+* 🔄 [C - Variables, if, else, while](./variables_if_else_while) 
+* ➿ [C - Functions, nested loops](./functions_nested_loops)
+* 🔁 [C - More functions, more nested loops](./more_functions_nested_loops)
 
-## Acknowledgements :pray:
+### Memory Management
+* 📍 [C - Pointers, arrays and strings](./pointers_arrays_strings)
+* 🔢 [C - More pointers, arrays and strings](./pointers_arrays_strings)
+* 🔄 [C - Recursion](./recursion)
+* ⌨️ [C - argc, argv](./argc_argv)
+* 💾 [C - malloc, free](./malloc_free)
+* 🧩 [C - More malloc, free](./more_malloc_free)
 
-All work contained in this project was completed as part of the curriculum for
-Holberton School. Holberton School is a campus-based full-stack software
-engineering program that prepares students for careers in the tech industry
-using project-based peer learning. For more information, visit
-[this link](https://www.holbertonschool.com/).
+### Data Structures
+* 📦 [C - Structures, typedef](./structures_typedef)
+* 👉 [C - Function pointers](./function_pointers)
+* ♾️ [C - Variadic functions](./variadic_functions)
+* 🖨️ [C - printf](https://github.com/Pmichel74/holbertonschool-printf)
+* 🔗 [C - Singly linked lists](./singly_linked_lists)
+* 📁 [C - File I/O](./file_io)
+* 🐚 [C - Simple Shell](https://github.com/Pmichel74/simple_shell)
+* 🔄 [C - Doubly linked lists](./doubly_linked_lists)
+* 📊 [C - Sorting algorithms & Big O](https://github.com/Pmichel74/holbertonschool-sorting_algorithms)
 
-<p align="center">
-  <img
-    src="img/holberton-logo.png"
-    alt="Holberton School">
-</p>
+## ⚙️ Requirements
+* Ubuntu 20.04 LTS
+* gcc 9.3.0
+* GNU Make 4.2.1
+
+## 🛠️ Installation
+```bash
+git clone https://github.com/Pmichel74/holbertonschool-low_level_programming.git
+cd holbertonschool-low_level_programming
+```
+## 💻 Usage
+Each project contains multiple tasks. To compile a file:
+```bash
+gcc -Wall -Werror -Wextra -pedantic file.c -o output
+./output
+```
+## 🧪 Testing
+Tests are available in the tests directory:
+```bash
+gcc -Wall -Werror -Wextra -pedantic tests/test_file.c file.c -o test
+./test
+```
+### 👤 Author
+Patrick MICHEL
+
+GitHub: @Pmichel74
+LinkedIn: Patrick MICHEL
+
+### 🙏 Acknowledgements
+All work contained in this project was completed as part of the curriculum for Holberton School. Holberton School is a campus-based full-stack software engineering program that prepares students for careers in the tech industry using project-based peer learning. For more information, visit this link.
